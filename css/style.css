@@ -48,31 +48,42 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 }
 #title {
+	font-family: 'Georgia';
 	width: auto;
-	font-size: 36px;
+	font-size: 38px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 1%;
 }
 #links {
+	font-family: 'Georgia';
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 1%;
+	min-width: 500px;
 	width: auto;
 }
-#links > ul > li {
-	display: inline-block;
-	padding-right: 10px;
-}
-#links > ul > li:not(:first-child):before{
-	content: "|";
-	padding-right: 10px;
-}
+	#links > ul > li {
+		display: inline-block;
+		padding-right: 10px;
+	}
+	#links > ul > li:not(:first-child):before{
+		content: "|";
+		padding-right: 10px;
+	}
+		#links > ul > li > a{
+			color: black;
+			text-decoration: none;
+		}
+		#links > ul > li > a:hover{
+			color: #666666;
+		}
 .line {
 	height: 2px;
+	min-width: 500px;
 	margin-left: 1%;
 	background: #666666; /* Old browsers */
-	background: -moz-linear-gradient(left,  #666666 0%, #ffffff 80%); /* FF3.6+ */
+	background: -moz-linear-gradient(left, #000000 0%, #000000 35%, #ffffff 50%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(25%,#2989d8), color-stop(75%,#207cca), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* Opera 11.10+ */
@@ -97,6 +108,7 @@ html, body {
 	line-height: 150%;
 }
 #footer, #push {
+	font-family: 'Georgia';
 	width: 100%;
 	height: 16px;
 	text-align: center;
