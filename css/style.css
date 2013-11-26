@@ -90,6 +90,9 @@ html, body {
 	background: -ms-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* IE10+ */
 	background: linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* W3C */
 }
+.currentLink {
+	font-weight: bold;
+}
 #eminem {
 	max-width: 900px;
 	padding-left: 2%;
@@ -97,7 +100,7 @@ html, body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -19px;
+	margin: 0 auto -21px;
 }
 #content {
 	width: 94%;
@@ -110,6 +113,6 @@ html, body {
 #footer, #push {
 	font-family: 'Georgia';
 	width: 100%;
-	height: 16px;
+	height: 21px;
 	text-align: center;
 }
