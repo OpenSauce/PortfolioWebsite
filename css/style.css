@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -46,6 +46,9 @@ table {
 html, body {
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
+}
+h2{
+	color:black;
 }
 #title {
 	font-family: 'Georgia';
@@ -109,6 +112,8 @@ html, body {
 	padding-left: 3%;
 	padding-right: 3%;
 	line-height: 150%;
+	text-align: center;
+	color:#808080;
 }
 #footer, #push {
 	font-family: 'Georgia';
