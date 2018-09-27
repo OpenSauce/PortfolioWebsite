@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 html, body, div, span, applet, object, iframe,
-h1, h3, h4, h5, h6, p, blockquote, pre,
+ h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -25,8 +25,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+a {
+	color: #5F89FD;
+}
+
 body {
 	line-height: 1;
+	background-color: 60B4CA;
 }
 ol, ul {
 	list-style: none;
@@ -46,20 +52,63 @@ table {
 html, body {
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
+	color: #D1AB97;
 }
+
+p {
+	padding-bottom: 10px;
+}
+
+h1 {
+	border-radius: 5px 5px 5px 5px;
+	border: 2px solid #60B4CA;
+	background-color: 585B64;
+	font-size: 22px;
+	font-weight: normal;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #FD7D5F;
+}
+
 h2{
-	color:black;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FD7D5F;
 }
+
+#titleheader {
+	background-image: url(../img/titlebg.png);
+	margin: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
 #title {
-	font-family: 'Georgia';
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
 	width: auto;
 	font-size: 38px;
 	padding-top: 10px;
+	padding-right: 1%;
 	padding-bottom: 10px;
-	padding-left: 1%;
+	text-align: right;
 }
+
+#subtitle {
+	font-family: 'Open Sans', sans-serif;
+	color: #FD7D5F;
+	font-size: 32px;
+	padding-right: 1%;
+	text-align: right;
+	padding-bottom: 10px;
+}
+
 #links {
-	font-family: 'Georgia';
+	font-size: 105%;
+	font-family: 'Open Sans', sans-serif;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 1%;
@@ -73,50 +122,68 @@ h2{
 	#links > ul > li:not(:first-child):before{
 		content: "|";
 		padding-right: 10px;
+		color: #D1AB97 !important;
+		font-weight: normal !important;
 	}
 		#links > ul > li > a{
-			color: black;
+			color: #585B64;
 			text-decoration: none;
 		}
 		#links > ul > li > a:hover{
-			color: #666666;
+			color: #D1AB97;
 		}
 .line {
 	height: 2px;
 	min-width: 500px;
 	margin-left: 1%;
 	background: #666666; /* Old browsers */
-	background: -moz-linear-gradient(left, #000000 0%, #000000 35%, #ffffff 50%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(25%,#2989d8), color-stop(75%,#207cca), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* IE10+ */
-	background: linear-gradient(left,  #ffffff 0%,#2989d8 25%,#207cca 75%,#ffffff 100%); /* W3C */
+	background: -moz-linear-gradient(left, #000000 0%, #60B4CA 35%, #ffffff 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(25%,#60B4CA), color-stop(75%,#FD7D5F), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#60B4CA 25%,#60B4CA 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ffffff 0%,#60B4CA 25%,#FD7D5F 75%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ffffff 0%,#60B4CA 25%,#FD7D5F 75%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(left,  #ffffff 0%,#60B4CA 25%,#FD7D5F 75%,#ffffff 100%); /* W3C */
 }
+
+.rightheader {
+	text-align: right;
+}
+
 .currentLink {
 	font-weight: bold;
+	color: #FD7D5F;
 }
 #eminem {
-	max-width: 900px;
+	border-radius: 15px 15px 0px 0px;
+	border: 2px solid #000000;
+	max-width: 1100px;
+	width: 100%;
+	background-color: #ffffff;
 	padding-left: 2%;
 	padding-right: 2%;
-	min-height: 100%;
+	min-height: 50%;
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -21px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 #content {
+	font-size: 16px;
 	width: 94%;
-	padding-top: 1%;
+	margin-top: 10px;
 	padding-bottom: 2%;
 	padding-left: 3%;
 	padding-right: 3%;
 	line-height: 150%;
-	text-align: center;
-	color:#808080;
+	text-align: left;
+	color:#585B64;
 }
 #footer, #push {
-	font-family: 'Georgia';
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
 	width: 100%;
 	height: 21px;
 	text-align: center;
